@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Non-trivial Pursuit! on Non-trivial Pursuit!</title>
+    <link>https://bhavishyagopesh.github.io/</link>
+    <description>Recent content in Non-trivial Pursuit! on Non-trivial Pursuit!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0530</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>On minimal degree of Summetric Boolean Polynomials</title>
+      <link>https://bhavishyagopesh.github.io/post/symmetric_boolean_functions/</link>
+      <pubDate>Wed, 12 Dec 2018 00:00:00 +0530</pubDate>
+      
+      <guid>https://bhavishyagopesh.github.io/post/symmetric_boolean_functions/</guid>
+      <description>&lt;p&gt;Very rough &lt;a href=&#34;https://drive.google.com/file/d/15jmFgu6MLJpTB7CTTuHUfo-rJr7EeFzz/view?usp=sharing&#34; target=&#34;_blank&#34;&gt;notes&lt;/a&gt; on the topic, mostly based on the following papers,
+     * &lt;a href=&#34;http://www.cs.technion.ac.il/users/wwwb/cgi-bin/tr-get.cgi/2010/MSC/MSC-2010-13.pdf&#34; target=&#34;_blank&#34;&gt;Gill Cohen&amp;rsquo;s MS thesis&lt;/a&gt;
+     * &lt;a href=&#34;https://link.springer.com/content/pdf/10.1007%2FBF01215917.pdf&#34; target=&#34;_blank&#34;&gt;VON ZUR GATHEN and Roche&lt;/a&gt;
+     * &lt;a href=&#34;https://link.springer.com/content/pdf/10.1007%2FBF01263419.pdf&#34; target=&#34;_blank&#34;&gt;Noam Nisan and  MARIO SZEGEDY &lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Effect of SparseXORs on Model Counting</title>
+      <link>https://bhavishyagopesh.github.io/talk/ugp1/</link>
+      <pubDate>Mon, 26 Nov 2018 00:00:00 +0530</pubDate>
+      
+      <guid>https://bhavishyagopesh.github.io/talk/ugp1/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

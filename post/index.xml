@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Non-trivial Pursuit!</title>
+    <link>https://bhavishyagopesh.github.io/post/</link>
+    <description>Recent content in Posts on Non-trivial Pursuit!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0530</lastBuildDate>
+    
+	<atom:link href="https://bhavishyagopesh.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>On minimal degree of Summetric Boolean Polynomials</title>
+      <link>https://bhavishyagopesh.github.io/post/symmetric_boolean_functions/</link>
+      <pubDate>Wed, 12 Dec 2018 00:00:00 +0530</pubDate>
+      
+      <guid>https://bhavishyagopesh.github.io/post/symmetric_boolean_functions/</guid>
+      <description>Very rough notes on the topic, mostly based on the following papers, * Gill Cohen&amp;rsquo;s MS thesis * VON ZUR GATHEN and Roche * Noam Nisan and MARIO SZEGEDY</description>
+    </item>
+    
+  </channel>
+</rss>
