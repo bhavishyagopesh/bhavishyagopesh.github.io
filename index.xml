@@ -11,15 +11,19 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>On minimal degree of Summetric Boolean Polynomials</title>
+      <title>On minimal degree of Summetric Boolean Functions</title>
       <link>https://bhavishyagopesh.github.io/post/symmetric_boolean_functions/</link>
       <pubDate>Wed, 12 Dec 2018 00:00:00 +0530</pubDate>
       
       <guid>https://bhavishyagopesh.github.io/post/symmetric_boolean_functions/</guid>
-      <description>&lt;p&gt;Very rough &lt;a href=&#34;https://drive.google.com/file/d/15jmFgu6MLJpTB7CTTuHUfo-rJr7EeFzz/view?usp=sharing&#34; target=&#34;_blank&#34;&gt;notes&lt;/a&gt; on the topic, mostly based on the following papers,
-     * &lt;a href=&#34;http://www.cs.technion.ac.il/users/wwwb/cgi-bin/tr-get.cgi/2010/MSC/MSC-2010-13.pdf&#34; target=&#34;_blank&#34;&gt;Gill Cohen&amp;rsquo;s MS thesis&lt;/a&gt;
-     * &lt;a href=&#34;https://link.springer.com/content/pdf/10.1007%2FBF01215917.pdf&#34; target=&#34;_blank&#34;&gt;VON ZUR GATHEN and Roche&lt;/a&gt;
-     * &lt;a href=&#34;https://link.springer.com/content/pdf/10.1007%2FBF01263419.pdf&#34; target=&#34;_blank&#34;&gt;Noam Nisan and  MARIO SZEGEDY &lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;Very rough &lt;a href=&#34;https://drive.google.com/file/d/15jmFgu6MLJpTB7CTTuHUfo-rJr7EeFzz/view?usp=sharing&#34; target=&#34;_blank&#34;&gt;notes&lt;/a&gt; on the topic, mostly based on the following papers,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; * [Gill Cohen&#39;s MS thesis](http://www.cs.technion.ac.il/users/wwwb/cgi-bin/tr-get.cgi/2010/MSC/MSC-2010-13.pdf)
+
+ * [VON ZUR GATHEN and Roche](https://link.springer.com/content/pdf/10.1007%2FBF01215917.pdf)
+
+ * [Noam Nisan and  MARIO SZEGEDY ](https://link.springer.com/content/pdf/10.1007%2FBF01263419.pdf)
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
