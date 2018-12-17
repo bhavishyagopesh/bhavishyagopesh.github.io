@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Approximate Model Counting on Non-trivial Pursuit!</title>
+    <link>https://bhavishyagopesh.github.io/tags/approximate-model-counting/</link>
+    <description>Recent content in Approximate Model Counting on Non-trivial Pursuit!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 16 Dec 2018 00:00:00 +0530</lastBuildDate>
+    
+	<atom:link href="https://bhavishyagopesh.github.io/tags/approximate-model-counting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>On the Size of XORs and Randomization in Approximate Model Counters</title>
+      <link>https://bhavishyagopesh.github.io/post/tacas2019/</link>
+      <pubDate>Sun, 16 Dec 2018 00:00:00 +0530</pubDate>
+      
+      <guid>https://bhavishyagopesh.github.io/post/tacas2019/</guid>
+      <description>Note:
+ This post is based on our (Kuldeep and yours truly ) paper submitted in TACAS2019 and is currently a work in progress.
+ This is mirrored at   Prelude: What is (approximate) Model Counting?1 Given a Boolean formula, say $ \phi $, to to compute the number of solutions of $ \phi $ is called (Exact) Model Counting. But it turns out it&amp;rsquo;s NP-hard ( Actual it&amp;rsquo;s #P, which is a class of counting problems associated with decision problems, and therefore is harder than NP-complete problems because counting the solutions is definitely harder than identifying one ).</description>
+    </item>
+    
+  </channel>
+</rss>
