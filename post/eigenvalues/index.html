@@ -15,8 +15,9 @@
   
     
   
-  <meta name="description" content="Very rough notes on the topic, mostly based on the following papers,
- * [Gill Cohen&#39;s MS thesis](http://www.cs.technion.ac.il/users/wwwb/cgi-bin/tr-get.cgi/2010/MSC/MSC-2010-13.pdf) * [VON ZUR GATHEN and Roche](https://link.springer.com/content/pdf/10.1007%2FBF01215917.pdf) * [Noam Nisan and MARIO SZEGEDY ](https://link.springer.com/content/pdf/10.1007%2FBF01263419.pdf)  ">
+  <meta name="description" content="Intuition behind eigenvalues and eigenvectors.
+ Mathstackexchange EigenMorality  Punchlines from above links  Eigenpairs are a lot like the roots of a polynomial. While roots of a polynomial is that they ground the polynomial(fix its shape), eigenvalues limit the behavior of the linear transformation.
+ The eigenvalues of a linear mapping is a measure of the distortion induced by the transformation and the eigenvectors tell you about how the distortion is oriented.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://bhavishyagopesh.github.io/post/eigenvalues/">
@@ -106,21 +107,22 @@
   
   <meta property="og:site_name" content="Non-trivial Pursuit!">
   <meta property="og:url" content="https://bhavishyagopesh.github.io/post/eigenvalues/">
-  <meta property="og:title" content="On minimal degree of Summetric Boolean Functions | Non-trivial Pursuit!">
-  <meta property="og:description" content="Very rough notes on the topic, mostly based on the following papers,
- * [Gill Cohen&#39;s MS thesis](http://www.cs.technion.ac.il/users/wwwb/cgi-bin/tr-get.cgi/2010/MSC/MSC-2010-13.pdf) * [VON ZUR GATHEN and Roche](https://link.springer.com/content/pdf/10.1007%2FBF01215917.pdf) * [Noam Nisan and MARIO SZEGEDY ](https://link.springer.com/content/pdf/10.1007%2FBF01263419.pdf)  "><meta property="og:image" content="https://bhavishyagopesh.github.io/img/portrait.jpg">
+  <meta property="og:title" content="How to intuitively understand eigenvalue and eigenvector? | Non-trivial Pursuit!">
+  <meta property="og:description" content="Intuition behind eigenvalues and eigenvectors.
+ Mathstackexchange EigenMorality  Punchlines from above links  Eigenpairs are a lot like the roots of a polynomial. While roots of a polynomial is that they ground the polynomial(fix its shape), eigenvalues limit the behavior of the linear transformation.
+ The eigenvalues of a linear mapping is a measure of the distortion induced by the transformation and the eigenvectors tell you about how the distortion is oriented."><meta property="og:image" content="https://bhavishyagopesh.github.io/img/portrait.jpg">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2018-12-12T00:00:00&#43;05:30">
+  <meta property="article:published_time" content="2019-01-05T00:00:00&#43;05:30">
   
-  <meta property="article:modified_time" content="2018-12-12T00:00:00&#43;05:30">
-  
-
+  <meta property="article:modified_time" content="2019-01-05T00:00:00&#43;05:30">
   
 
   
 
-  <title>On minimal degree of Summetric Boolean Functions | Non-trivial Pursuit!</title>
+  
+
+  <title>How to intuitively understand eigenvalue and eigenvector? | Non-trivial Pursuit!</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
@@ -294,7 +296,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">On minimal degree of Summetric Boolean Functions</h1>
+  <h1 itemprop="name">How to intuitively understand eigenvalue and eigenvector?</h1>
 
   
 
@@ -312,9 +314,9 @@
 
   <span class="article-date">
     
-    <meta content="2018-12-12 00:00:00 &#43;0530 IST" itemprop="datePublished">
-    <time datetime="2018-12-12 00:00:00 &#43;0530 IST" itemprop="dateModified">
-      Dec 12, 2018
+    <meta content="2019-01-05 00:00:00 &#43;0530 IST" itemprop="datePublished">
+    <time datetime="2019-01-05 00:00:00 &#43;0530 IST" itemprop="dateModified">
+      Jan 5, 2019
     </time>
   </span>
   <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
@@ -339,7 +341,7 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=On%20minimal%20degree%20of%20Summetric%20Boolean%20Functions&amp;url=https%3a%2f%2fbhavishyagopesh.github.io%2fpost%2feigenvalues%2f"
+         href="https://twitter.com/intent/tweet?text=How%20to%20intuitively%20understand%20eigenvalue%20and%20eigenvector%3f&amp;url=https%3a%2f%2fbhavishyagopesh.github.io%2fpost%2feigenvalues%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
@@ -353,21 +355,21 @@
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fbhavishyagopesh.github.io%2fpost%2feigenvalues%2f&amp;title=On%20minimal%20degree%20of%20Summetric%20Boolean%20Functions"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fbhavishyagopesh.github.io%2fpost%2feigenvalues%2f&amp;title=How%20to%20intuitively%20understand%20eigenvalue%20and%20eigenvector%3f"
          target="_blank" rel="noopener">
         <i class="fab fa-linkedin-in"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fbhavishyagopesh.github.io%2fpost%2feigenvalues%2f&amp;title=On%20minimal%20degree%20of%20Summetric%20Boolean%20Functions"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fbhavishyagopesh.github.io%2fpost%2feigenvalues%2f&amp;title=How%20to%20intuitively%20understand%20eigenvalue%20and%20eigenvector%3f"
          target="_blank" rel="noopener">
         <i class="fab fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=On%20minimal%20degree%20of%20Summetric%20Boolean%20Functions&amp;body=https%3a%2f%2fbhavishyagopesh.github.io%2fpost%2feigenvalues%2f">
+         href="mailto:?subject=How%20to%20intuitively%20understand%20eigenvalue%20and%20eigenvector%3f&amp;body=https%3a%2f%2fbhavishyagopesh.github.io%2fpost%2feigenvalues%2f">
         <i class="fas fa-envelope"></i>
       </a>
     </li>
@@ -403,14 +405,26 @@
   <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
-      <p>Very rough <a href="/post/notes.pdf">notes</a> on the topic, mostly based on the following papers,</p>
+      
 
-<pre><code> * [Gill Cohen's MS thesis](http://www.cs.technion.ac.il/users/wwwb/cgi-bin/tr-get.cgi/2010/MSC/MSC-2010-13.pdf)
+<p>Intuition behind eigenvalues and eigenvectors.</p>
 
- * [VON ZUR GATHEN and Roche](https://link.springer.com/content/pdf/10.1007%2FBF01215917.pdf)
+<ul>
+<li><a href="https://math.stackexchange.com/questions/243533/how-to-intuitively-understand-eigenvalue-and-eigenvector" target="_blank">Mathstackexchange</a></li>
+<li><a href="https://www.scottaaronson.com/blog/?p=1820" target="_blank">EigenMorality</a></li>
+</ul>
 
- * [Noam Nisan and  MARIO SZEGEDY ](https://link.springer.com/content/pdf/10.1007%2FBF01263419.pdf)
-</code></pre>
+<h3 id="punchlines-from-above-links">Punchlines from above links</h3>
+
+<hr />
+
+<hr />
+
+<ul>
+<li><p><em>Eigenpairs are a lot like the roots of a polynomial</em>. While roots of a polynomial is that they ground the polynomial(fix its shape), eigenvalues limit the behavior of the linear transformation.</p></li>
+
+<li><p>The eigenvalues of a linear mapping is a measure of the distortion induced by the transformation and the eigenvectors tell you about how the distortion is oriented.</p></li>
+</ul>
 
     </div>
 
@@ -419,9 +433,9 @@
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tags/symmetric-boolean-functions/">Symmetric Boolean Functions</a>
+  <a class="badge badge-light" href="/tags/linear-algebra/">Linear Algebra</a>
   
-  <a class="badge badge-light" href="/tags/tcs/">TCS</a>
+  <a class="badge badge-light" href="/tags/links/">Links</a>
   
 </div>
 
@@ -501,16 +515,6 @@
 
 
     
-    
-    <div class="article-widget">
-      <div class="hr-light"></div>
-      <h3>Related</h3>
-      <ul>
-        
-        <li><a href="/post/symmetric_boolean_functions/">On minimal degree of Summetric Boolean Functions</a></li>
-        
-      </ul>
-    </div>
     
 
     

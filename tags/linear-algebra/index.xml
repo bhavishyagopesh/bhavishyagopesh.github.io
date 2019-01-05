@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linear Algebra on Non-trivial Pursuit!</title>
+    <link>https://bhavishyagopesh.github.io/tags/linear-algebra/</link>
+    <description>Recent content in Linear Algebra on Non-trivial Pursuit!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sat, 05 Jan 2019 00:00:00 +0530</lastBuildDate>
+    
+	<atom:link href="https://bhavishyagopesh.github.io/tags/linear-algebra/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to intuitively understand eigenvalue and eigenvector?</title>
+      <link>https://bhavishyagopesh.github.io/post/eigenvalues/</link>
+      <pubDate>Sat, 05 Jan 2019 00:00:00 +0530</pubDate>
+      
+      <guid>https://bhavishyagopesh.github.io/post/eigenvalues/</guid>
+      <description>Intuition behind eigenvalues and eigenvectors.
+ Mathstackexchange EigenMorality  Punchlines from above links  Eigenpairs are a lot like the roots of a polynomial. While roots of a polynomial is that they ground the polynomial(fix its shape), eigenvalues limit the behavior of the linear transformation.
+ The eigenvalues of a linear mapping is a measure of the distortion induced by the transformation and the eigenvectors tell you about how the distortion is oriented.</description>
+    </item>
+    
+  </channel>
+</rss>

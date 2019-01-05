@@ -4,6 +4,14 @@
     
     <url>
     
+      <loc>https://bhavishyagopesh.github.io/post/eigenvalues/</loc>
+      <lastmod>2019-01-05T00:00:00+05:30</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://bhavishyagopesh.github.io/post/tacas2019/</loc>
       <lastmod>2018-12-16T00:00:00+05:30</lastmod>
     </url>
@@ -62,6 +70,24 @@
     <url>
     
       <loc>https://bhavishyagopesh.github.io/categories/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://bhavishyagopesh.github.io/tags/linear-algebra/</loc>
+      <lastmod>2019-01-05T00:00:00+05:30</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://bhavishyagopesh.github.io/tags/links/</loc>
+      <lastmod>2019-01-05T00:00:00+05:30</lastmod>
       <priority>0</priority>
     </url>
     
