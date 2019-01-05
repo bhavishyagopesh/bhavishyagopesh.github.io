@@ -120,7 +120,7 @@ Thus reducing the number of SAT oracle calls from linear to logarithmic.
   &lt;br&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;This was the idea that made &lt;a href=&#34;https://www.comp.nus.edu.sg/~meel/Papers/ijcai16_counting.pdf&#34; target=&#34;_blank&#34;&gt;ApproxMC2 much faster than ApproxMC&lt;/a&gt;. We applied to
+&lt;p&gt;This was the idea that made &lt;a href=&#34;https://www.comp.nus.edu.sg/~meel/Papers/ijcai16_counting.pdf&#34; target=&#34;_blank&#34;&gt;ApproxMC3 much faster than ApproxMC&lt;/a&gt;. We applied to
   SparseCount and obtained significant speedups(&amp;gt; 2.5x).&lt;/p&gt;
 
 &lt;p&gt;Code:&lt;/p&gt;
@@ -132,7 +132,7 @@ Thus reducing the number of SAT oracle calls from linear to logarithmic.
 &lt;h3 id=&#34;2-argument-for-why-sparse-xors-cannot-be-used-with-approxmc&#34;&gt;2.)  Argument for why sparse XORs cannot be used with ApproxMC&lt;/h3&gt;
 
 &lt;p&gt;It turns out the properties of sparse hash families proposed by Zhao et al are  not sufficient for
-proofs of ApproxMC2 to go through. The proofs of ApproxMC2 depend on the relationship between variance($\sigma^{2}$)
+proofs of ApproxMC3 to go through. The proofs of ApproxMC3 depend on the relationship between variance($\sigma^{2}$)
  and mean($\mu$), specifically for proofs to work out $\sigma^{2} \leq \mu^{2}$.
  But with proposed family  of hash functions
 it could be shown that $ \sigma^{2} \leq \eta $ where $\eta$ $\in$  $\Omega(\mu^{2})$.&lt;/p&gt;
@@ -167,20 +167,20 @@ SparseCount.&lt;/li&gt;
 &lt;br&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Also the usual ApproxMC2 (with p = &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;) is 118x faster than
+&lt;li&gt;Also the usual ApproxMC3 (with p = &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;) is 118x faster than
 SparseCount.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th align=&#34;center&#34;&gt;&lt;img src=&#34;https://bhavishyagopesh.github.io/post/triple_sparse_vs_scalmc.png&#34; alt=&#34;ApproxMC2 vis-a-vis SparseCount2&#34; /&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;img src=&#34;https://bhavishyagopesh.github.io/post/triple_sparse_vs_scalmc.png&#34; alt=&#34;ApproxMC3 vis-a-vis SparseCount2&#34; /&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;ApproxMC2 vis-a-vis SparseCount2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;ApproxMC3 vis-a-vis SparseCount2&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -201,13 +201,13 @@ Toeplitz matrices bring down requirement of random bits from $O(mn)$ to $O(m+n)$
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th align=&#34;center&#34;&gt;&lt;img src=&#34;https://bhavishyagopesh.github.io/post/teoplitz-scalmc.png&#34; alt=&#34;ApproxMC2 vs Toeplitz-ApproxMC2 comparison&#34; /&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;img src=&#34;https://bhavishyagopesh.github.io/post/teoplitz-scalmc.png&#34; alt=&#34;ApproxMC3 vs Toeplitz-ApproxMC3 comparison&#34; /&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;ApproxMC2 vs Toeplitz-ApproxMC2 comparison&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;ApproxMC3 vs Toeplitz-ApproxMC3 comparison&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -238,9 +238,9 @@ believed beliefs that current construction of sparse XORs (by Zhao et
 al. and Ermon et al. ) lead to runtime improvement specifically we observe that&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;Sparse constraints do not work with ApproxMC2.&lt;/li&gt;
+&lt;li&gt;Sparse constraints do not work with ApproxMC3.&lt;/li&gt;
 &lt;li&gt;Sparsecount2 performs better than SparseCount&lt;/li&gt;
-&lt;li&gt;ApproxMC2 performs much better than both SparseCount and Spaesecount2&lt;/li&gt;
+&lt;li&gt;ApproxMC3 performs much better than both SparseCount and Spaesecount2&lt;/li&gt;
 &lt;li&gt;Toeplitz matrices have no effect on run-time&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -252,6 +252,23 @@ al. and Ermon et al. ) lead to runtime improvement specifically we observe that&
 &lt;br&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;fn1&#34;&gt; [1] &lt;/a&gt; You can find a nice blogpost , with much more SAT solver internal details, on the same &lt;a href=&#34;https://www.msoos.org/2018/12/how-approximate-model-counting-works/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>On minimal degree of Summetric Boolean Functions</title>
+      <link>https://bhavishyagopesh.github.io/post/eigenvalues/</link>
+      <pubDate>Wed, 12 Dec 2018 00:00:00 +0530</pubDate>
+      
+      <guid>https://bhavishyagopesh.github.io/post/eigenvalues/</guid>
+      <description>&lt;p&gt;Very rough &lt;a href=&#34;https://bhavishyagopesh.github.io/post/notes.pdf&#34;&gt;notes&lt;/a&gt; on the topic, mostly based on the following papers,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; * [Gill Cohen&#39;s MS thesis](http://www.cs.technion.ac.il/users/wwwb/cgi-bin/tr-get.cgi/2010/MSC/MSC-2010-13.pdf)
+
+ * [VON ZUR GATHEN and Roche](https://link.springer.com/content/pdf/10.1007%2FBF01215917.pdf)
+
+ * [Noam Nisan and  MARIO SZEGEDY ](https://link.springer.com/content/pdf/10.1007%2FBF01263419.pdf)
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

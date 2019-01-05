@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
@@ -17,10 +15,11 @@
   
     
   
-  <meta name="description" content="CS undergrad @IITK">
+  <meta name="description" content="Very rough notes on the topic, mostly based on the following papers,
+ * [Gill Cohen&#39;s MS thesis](http://www.cs.technion.ac.il/users/wwwb/cgi-bin/tr-get.cgi/2010/MSC/MSC-2010-13.pdf) * [VON ZUR GATHEN and Roche](https://link.springer.com/content/pdf/10.1007%2FBF01215917.pdf) * [Noam Nisan and MARIO SZEGEDY ](https://link.springer.com/content/pdf/10.1007%2FBF01263419.pdf)  ">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://bhavishyagopesh.github.io/tags/symmetric-boolean-functions/">
+  <link rel="alternate" hreflang="en-us" href="https://bhavishyagopesh.github.io/post/eigenvalues/">
 
   
 
@@ -86,15 +85,15 @@
   
 
   
-  <link rel="alternate" href="https://bhavishyagopesh.github.io/tags/symmetric-boolean-functions/index.xml" type="application/rss+xml" title="Non-trivial Pursuit!">
-  <link rel="feed" href="https://bhavishyagopesh.github.io/tags/symmetric-boolean-functions/index.xml" type="application/rss+xml" title="Non-trivial Pursuit!">
+  <link rel="alternate" href="https://bhavishyagopesh.github.io/index.xml" type="application/rss+xml" title="Non-trivial Pursuit!">
+  <link rel="feed" href="https://bhavishyagopesh.github.io/index.xml" type="application/rss+xml" title="Non-trivial Pursuit!">
   
 
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://bhavishyagopesh.github.io/tags/symmetric-boolean-functions/">
+  <link rel="canonical" href="https://bhavishyagopesh.github.io/post/eigenvalues/">
 
   
   
@@ -106,19 +105,22 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Non-trivial Pursuit!">
-  <meta property="og:url" content="https://bhavishyagopesh.github.io/tags/symmetric-boolean-functions/">
-  <meta property="og:title" content="Symmetric Boolean Functions | Non-trivial Pursuit!">
-  <meta property="og:description" content="CS undergrad @IITK"><meta property="og:image" content="https://bhavishyagopesh.github.io/img/portrait.jpg">
+  <meta property="og:url" content="https://bhavishyagopesh.github.io/post/eigenvalues/">
+  <meta property="og:title" content="On minimal degree of Summetric Boolean Functions | Non-trivial Pursuit!">
+  <meta property="og:description" content="Very rough notes on the topic, mostly based on the following papers,
+ * [Gill Cohen&#39;s MS thesis](http://www.cs.technion.ac.il/users/wwwb/cgi-bin/tr-get.cgi/2010/MSC/MSC-2010-13.pdf) * [VON ZUR GATHEN and Roche](https://link.springer.com/content/pdf/10.1007%2FBF01215917.pdf) * [Noam Nisan and MARIO SZEGEDY ](https://link.springer.com/content/pdf/10.1007%2FBF01263419.pdf)  "><meta property="og:image" content="https://bhavishyagopesh.github.io/img/portrait.jpg">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2018-12-12T00:00:00&#43;05:30">
+  <meta property="article:published_time" content="2018-12-12T00:00:00&#43;05:30">
+  
+  <meta property="article:modified_time" content="2018-12-12T00:00:00&#43;05:30">
   
 
   
 
   
 
-  <title>Symmetric Boolean Functions | Non-trivial Pursuit!</title>
+  <title>On minimal degree of Summetric Boolean Functions | Non-trivial Pursuit!</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
@@ -271,7 +273,9 @@
 </nav>
 
 
+<article class="article" itemscope itemtype="http://schema.org/Article">
 
+  
 
 
 
@@ -288,48 +292,235 @@
 
   
   
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">On minimal degree of Summetric Boolean Functions</h1>
+
+  
+
   
     
-  
-<div class="universal-wrapper pt-3">
-  <h1 itemprop="name">Symmetric Boolean Functions</h1>
+
+<div class="article-metadata">
 
   
+  
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Bhavishya">
+  </span>
+  
+
+  <span class="article-date">
+    
+    <meta content="2018-12-12 00:00:00 &#43;0530 IST" itemprop="datePublished">
+    <time datetime="2018-12-12 00:00:00 &#43;0530 IST" itemprop="dateModified">
+      Dec 12, 2018
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Bhavishya">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    1 min read
+  </span>
+  
+
+  
+  
+
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=On%20minimal%20degree%20of%20Summetric%20Boolean%20Functions&amp;url=https%3a%2f%2fbhavishyagopesh.github.io%2fpost%2feigenvalues%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fbhavishyagopesh.github.io%2fpost%2feigenvalues%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fbhavishyagopesh.github.io%2fpost%2feigenvalues%2f&amp;title=On%20minimal%20degree%20of%20Summetric%20Boolean%20Functions"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fbhavishyagopesh.github.io%2fpost%2feigenvalues%2f&amp;title=On%20minimal%20degree%20of%20Summetric%20Boolean%20Functions"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=On%20minimal%20degree%20of%20Summetric%20Boolean%20Functions&amp;body=https%3a%2f%2fbhavishyagopesh.github.io%2fpost%2feigenvalues%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 </div>
 
 
 
-<div class="universal-wrapper">
-  
+  <div class="article-container">
 
-  
-  
-  <div>
-    <h2><a href="/post/eigenvalues/">On minimal degree of Summetric Boolean Functions</a></h2>
-    <div class="article-style">
-      
-      Very rough notes on the topic, mostly based on the following papers,
- * [Gill Cohen's MS thesis](http://www.cs.technion.ac.il/users/wwwb/cgi-bin/tr-get.cgi/2010/MSC/MSC-2010-13.pdf) * [VON ZUR GATHEN and Roche](https://link.springer.com/content/pdf/10.1007%2FBF01215917.pdf) * [Noam Nisan and MARIO SZEGEDY ](https://link.springer.com/content/pdf/10.1007%2FBF01263419.pdf)  
-      
+    <div class="article-style" itemprop="articleBody">
+      <p>Very rough <a href="/post/notes.pdf">notes</a> on the topic, mostly based on the following papers,</p>
+
+<pre><code> * [Gill Cohen's MS thesis](http://www.cs.technion.ac.il/users/wwwb/cgi-bin/tr-get.cgi/2010/MSC/MSC-2010-13.pdf)
+
+ * [VON ZUR GATHEN and Roche](https://link.springer.com/content/pdf/10.1007%2FBF01215917.pdf)
+
+ * [Noam Nisan and  MARIO SZEGEDY ](https://link.springer.com/content/pdf/10.1007%2FBF01263419.pdf)
+</code></pre>
+
     </div>
-  </div>
-  
-  <div>
-    <h2><a href="/post/symmetric_boolean_functions/">On minimal degree of Summetric Boolean Functions</a></h2>
-    <div class="article-style">
-      
-      Very rough notes on the topic, mostly based on the following papers,
- * [Gill Cohen's MS thesis](http://www.cs.technion.ac.il/users/wwwb/cgi-bin/tr-get.cgi/2010/MSC/MSC-2010-13.pdf) * [VON ZUR GATHEN and Roche](https://link.springer.com/content/pdf/10.1007%2FBF01215917.pdf) * [Noam Nisan and MARIO SZEGEDY ](https://link.springer.com/content/pdf/10.1007%2FBF01263419.pdf)  
-      
-    </div>
-  </div>
-  
 
-  
+    
 
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/symmetric-boolean-functions/">Symmetric Boolean Functions</a>
+  
+  <a class="badge badge-light" href="/tags/tcs/">TCS</a>
+  
 </div>
+
+
+
+    
+
+
+
+
+
+
+<div class="media author-card" itemscope itemtype="http://schema.org/Person">
+  
+  <img class="portrait mr-3" src="/img/portrait.jpg" itemprop="image" alt="Avatar">
+  
+  <div class="media-body">
+    <h5 class="card-title" itemprop="name"><a href="/">Bhavishya</a></h5>
+    <h6 class="card-subtitle">CS undergrad @IITK</h6>
+    
+    <ul class="network-icon" aria-hidden="true">
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      <li>
+        <a itemprop="sameAs" href="mailto:bhavishyagopesh@gmail.com" >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://twitter.com/BhavishyaDesai1" target="_blank" rel="noopener">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://github.com/bhavishyagopesh" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+
+    
+    
+    <div class="article-widget">
+      <div class="hr-light"></div>
+      <h3>Related</h3>
+      <ul>
+        
+        <li><a href="/post/symmetric_boolean_functions/">On minimal degree of Summetric Boolean Functions</a></li>
+        
+      </ul>
+    </div>
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
 <div class="container">
   <footer class="site-footer">
   
@@ -481,6 +672,4 @@
 
   </body>
 </html>
-
-
 

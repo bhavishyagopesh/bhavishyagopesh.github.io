@@ -519,7 +519,7 @@ Thus reducing the number of SAT oracle calls from linear to logarithmic.
   <br></p>
 </blockquote>
 
-<p>This was the idea that made <a href="https://www.comp.nus.edu.sg/~meel/Papers/ijcai16_counting.pdf" target="_blank">ApproxMC2 much faster than ApproxMC</a>. We applied to
+<p>This was the idea that made <a href="https://www.comp.nus.edu.sg/~meel/Papers/ijcai16_counting.pdf" target="_blank">ApproxMC3 much faster than ApproxMC</a>. We applied to
   SparseCount and obtained significant speedups(&gt; 2.5x).</p>
 
 <p>Code:</p>
@@ -531,7 +531,7 @@ Thus reducing the number of SAT oracle calls from linear to logarithmic.
 <h3 id="2-argument-for-why-sparse-xors-cannot-be-used-with-approxmc">2.)  Argument for why sparse XORs cannot be used with ApproxMC</h3>
 
 <p>It turns out the properties of sparse hash families proposed by Zhao et al are  not sufficient for
-proofs of ApproxMC2 to go through. The proofs of ApproxMC2 depend on the relationship between variance($\sigma^{2}$)
+proofs of ApproxMC3 to go through. The proofs of ApproxMC3 depend on the relationship between variance($\sigma^{2}$)
  and mean($\mu$), specifically for proofs to work out $\sigma^{2} \leq \mu^{2}$.
  But with proposed family  of hash functions
 it could be shown that $ \sigma^{2} \leq \eta $ where $\eta$ $\in$  $\Omega(\mu^{2})$.</p>
@@ -566,20 +566,20 @@ SparseCount.</li>
 <br></p>
 
 <ul>
-<li>Also the usual ApproxMC2 (with p = <sup>1</sup>&frasl;<sub>2</sub>) is 118x faster than
+<li>Also the usual ApproxMC3 (with p = <sup>1</sup>&frasl;<sub>2</sub>) is 118x faster than
 SparseCount.</li>
 </ul>
 
 <table>
 <thead>
 <tr>
-<th align="center"><img src="/post/triple_sparse_vs_scalmc.png" alt="ApproxMC2 vis-a-vis SparseCount2" /></th>
+<th align="center"><img src="/post/triple_sparse_vs_scalmc.png" alt="ApproxMC3 vis-a-vis SparseCount2" /></th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td align="center">ApproxMC2 vis-a-vis SparseCount2</td>
+<td align="center">ApproxMC3 vis-a-vis SparseCount2</td>
 </tr>
 </tbody>
 </table>
@@ -600,13 +600,13 @@ Toeplitz matrices bring down requirement of random bits from $O(mn)$ to $O(m+n)$
 <table>
 <thead>
 <tr>
-<th align="center"><img src="/post/teoplitz-scalmc.png" alt="ApproxMC2 vs Toeplitz-ApproxMC2 comparison" /></th>
+<th align="center"><img src="/post/teoplitz-scalmc.png" alt="ApproxMC3 vs Toeplitz-ApproxMC3 comparison" /></th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td align="center">ApproxMC2 vs Toeplitz-ApproxMC2 comparison</td>
+<td align="center">ApproxMC3 vs Toeplitz-ApproxMC3 comparison</td>
 </tr>
 </tbody>
 </table>
@@ -637,9 +637,9 @@ believed beliefs that current construction of sparse XORs (by Zhao et
 al. and Ermon et al. ) lead to runtime improvement specifically we observe that</p>
 
 <ol>
-<li>Sparse constraints do not work with ApproxMC2.</li>
+<li>Sparse constraints do not work with ApproxMC3.</li>
 <li>Sparsecount2 performs better than SparseCount</li>
-<li>ApproxMC2 performs much better than both SparseCount and Spaesecount2</li>
+<li>ApproxMC3 performs much better than both SparseCount and Spaesecount2</li>
 <li>Toeplitz matrices have no effect on run-time</li>
 </ol></li>
 </ul>
